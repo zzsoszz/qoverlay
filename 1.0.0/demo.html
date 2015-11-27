@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+
+<link rel="stylesheet" href="jquery.qoverlay.css"   media="all"    type="text/css" />
+<script type="text/javascript"  src="jquery-1.10.2.js" ></script>
+<script type="text/javascript"  src="jquery.qoverlay.js" ></script>
+
+
+<script>
+	$(document).ready(
+		function()
+		{
+			$(".qoverlay").qoverlay(
+				{
+					url:"load10.gif"
+				}
+			);
+			$(".qoverlay").qoverlay("show");
+			
+			$("#btn1").click(
+				function()
+				{
+					$(".qoverlay").qoverlay("hide");
+				}
+			);
+		}
+	);
+</script>
+
+
+</head>
+
+
+<body>
+
+	<div class="qoverlay" style="width:100px;height:100px;background:#336699">
+		
+	</div>
+	<div>
+			<button id="btn1">test</button>
+	</div>
+</body>
+
+</html>
